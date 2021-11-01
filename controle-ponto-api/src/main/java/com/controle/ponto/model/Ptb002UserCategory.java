@@ -21,6 +21,6 @@ public class Ptb002UserCategory {
 	@Column(name = "id_user_category")
 	private Long id;
 	
-	@Column(name = "description_user-category")
+	@Column(name = "description_user_category")
 	private String description;
 }

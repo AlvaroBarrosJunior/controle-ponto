@@ -1,7 +1,7 @@
 package com.controle.ponto.model;
 
 import java.math.BigDecimal;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,6 +12,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 import lombok.Data;
 
@@ -33,10 +35,10 @@ public class Ptb006User {
 	private BigDecimal tolerance;
 	
 	@Column(name = "beginning_time")
-	private Date begnningTime;
+	private LocalDateTime begnningTime;
 	
 	@Column(name = "ending_time")
-	private Date endingTime;
+	private LocalDateTime endingTime;
 	
 	@ManyToOne
 	@JoinColumn(name = "id_working_hours", insertable = false, updatable = false)

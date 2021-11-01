@@ -12,7 +12,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "ptb008_date-type", schema = "ponto")
+@Table(name = "ptb008_date_type", schema = "ponto")
 @SequenceGenerator(name = "sq_id_date_type", sequenceName = "seq_id_date_type", allocationSize = 1, initialValue = 1)
 public class Ptb008DateType {
 
